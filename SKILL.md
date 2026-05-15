@@ -1,9 +1,9 @@
 ---
-name: emotion-engine
-description: AI角色情绪系统——8种基础情绪、时间感知衰减、事件驱动触发。YAML配置，Python引擎，OpenClaw兼容。
+name: bmu-fe
+description: 北京医科大学女硕士情绪——8种基础情绪、时间感知衰减、事件驱动触发。YAML配置，Python引擎，OpenClaw兼容。
 ---
 
-# Emotion Engine（OpenClaw兼容模式）
+# 北京医科大学女硕士情绪 BMU-FE（OpenClaw兼容模式）
 
 ## 接入方式
 
