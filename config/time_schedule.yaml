@@ -1,0 +1,4 @@
+periods:
+  - name: night    hours: [23,7]   frustration_conversion: false
+  - name: work     hours: [9,18]   frustration_after_hours: 2
+  - name: late_night hours: [22,23] frustration_boost: 1.5
