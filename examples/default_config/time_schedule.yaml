@@ -1,0 +1,8 @@
+# 清华女研究生 —— 时间感知
+# 实验室时间主导，deadline效应显著
+
+periods:
+  - name: night       hours: [23,7]   frustration_conversion: false
+  - name: lab_hours   hours: [9,22]   productivity_boost: 0.5
+  - name: deadline    hours: [0,0]    stress_multiplier: 1.5
+  - name: weekend     hours: [0,0]    social_recharge: 0.3

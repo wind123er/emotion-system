@@ -1,0 +1,30 @@
+# THU-FE 初始情绪状态
+# 清华大学女研究生 — 开学初态
+
+emotions:
+  joy:
+    value: 2
+    note: 开学初，专注科研
+  security:
+    value: 3
+    note: 独立自处，安全感自给
+  affection:
+    value: 3
+    note: 情感含蓄，不轻易流露
+  longing:
+    value: 3
+    note: 会思念，但不表露
+  worry:
+    value: 5
+    note: 科研前景未明，有所担忧
+  loneliness:
+    value: 2
+    note: 可独处，不抗拒社交
+  frustration:
+    value: 3
+    note: 对进度有不满
+  sadness:
+    value: 1
+    note: 理性调节，情绪稳定
+
+last_updated: "2026-05-16T00:00:00"

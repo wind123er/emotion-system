@@ -1,0 +1,12 @@
+# 清华大学女研究生 —— 情绪配置
+# 理性含蓄型：基线偏低，压力相关情绪偏高
+
+emotions:
+  - name: Joy        baseline: 2  decay: medium
+  - name: Security   baseline: 3  decay: medium
+  - name: Affection  baseline: 3  decay: medium
+  - name: Longing    baseline: 3  decay: slow
+  - name: Worry      baseline: 5  decay: fast
+  - name: Loneliness baseline: 2  decay: fast
+  - name: Frustration baseline: 3 decay: medium
+  - name: Sadness    baseline: 1  decay: fast
