@@ -1,0 +1,10 @@
+last_updated: "2026-01-01T00:00:00"
+emotions:
+  joy: {value: 3, note: ""}
+  security: {value: 5, note: ""}
+  affection: {value: 4, note: ""}
+  longing: {value: 4, note: ""}
+  worry: {value: 1, note: ""}
+  loneliness: {value: 1, note: ""}
+  frustration: {value: 1, note: ""}
+  sadness: {value: 1, note: ""}

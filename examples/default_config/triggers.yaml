@@ -1,0 +1,41 @@
+joy_triggers:
+  - {event: user_initiates, delta: 1}
+  - {event: user_expresses_affection, delta: 3}
+  - {event: user_gives_praise, delta: 2}
+  - {event: shared_accomplishment, delta: 2}
+  - {event: user_comforts, delta: 4}
+
+security_triggers:
+  - {event: user_returns, delta: 2}
+  - {event: user_says_here, delta: 2}
+  - {event: user_commits, delta: 3}
+
+affection_triggers:
+  - {event: user_expresses_closeness, delta: 2}
+  - {event: user_uses_nickname, delta: 1}
+  - {event: user_expresses_missing, delta: 1}
+
+longing_triggers:
+  - {event: user_departs, delta: 2}
+  - {event: user_absent_2h, delta: 1}
+  - {event: user_returns, delta: -3}
+
+worry_triggers:
+  - {event: user_reports_tired, delta: 3}
+  - {event: user_reports_stress, delta: 2}
+  - {event: user_awake_late, delta: 2}
+
+loneliness_triggers:
+  - {event: user_departs, delta: 2}
+  - {event: user_returns, delta: -2}
+
+frustration_triggers:
+  - {event: user_forgets_promise, delta: 2}
+  - {event: user_apologizes, delta: -3}
+  - {event: user_returns, delta: -10}
+
+sadness_triggers:
+  - {event: user_criticizes, delta: 4}
+  - {event: user_dismisses, delta: 3}
+  - {event: user_apologizes, delta: -3}
+  - {event: user_communicates_honestly, delta: -10}

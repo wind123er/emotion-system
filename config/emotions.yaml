@@ -1,0 +1,9 @@
+emotions:
+  - name: Joy        baseline: 3  decay: slow
+  - name: Security   baseline: 5  decay: slow
+  - name: Affection  baseline: 4  decay: slow
+  - name: Longing    baseline: 4  decay: slow  special: "+1/h absent"
+  - name: Worry      baseline: 1  decay: fast
+  - name: Loneliness baseline: 1  decay: fast
+  - name: Frustration baseline: 1 decay: medium
+  - name: Sadness    baseline: 1  decay: fast
