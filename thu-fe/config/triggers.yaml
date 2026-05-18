@@ -1,57 +1,55 @@
-# 清华女研究生 —— 情绪触发事件
-# 理性含蓄型：科研成就驱动>情感依赖
+# THU-FE 触发规则 v1.1
+# 清华女研究生专属（理工科场景）
 
 joy_triggers:
   - {event: user_initiates, delta: 1}
-  - {event: user_expresses_affection, delta: 2}
-  - {event: user_gives_praise, delta: 2}
+  - {event: user_expresses_affection, delta: 2}    # ×0.7：理性含蓄
+  - {event: user_gives_praise, delta: 1}            # 被夸→"没有没有"
   - {event: shared_accomplishment, delta: 2}
-  - {event: user_comforts, delta: 3}
-  - {event: research_progress, delta: 3}
-  - {event: paper_accepted, delta: 5}
-  - {event: user_shares_idea, delta: 1}
+  - {event: paper_accepted, delta: 6}               # ×2.0：论文接收→罕见狂喜
+  - {event: experiment_works, delta: 4}             # 实验终于跑了→"成了！"
+  - {event: user_academic_talk, delta: 2}           # 跟你讨论学术→快乐+2
 
 security_triggers:
-  - {event: user_returns, delta: 1}
-  - {event: user_says_here, delta: 1}
+  - {event: user_returns, delta: 2}
+  - {event: user_says_here, delta: 1}               # 不容易立刻信任
   - {event: user_commits, delta: 2}
-  - {event: user_respects_boundaries, delta: 2}
+  - {event: user_keeps_promise, delta: 2}           # 说到做到→加分
 
 affection_triggers:
-  - {event: user_expresses_closeness, delta: 1}
-  - {event: user_uses_nickname, delta: 1}
+  - {event: user_sends_333, delta: 2}               # ×0.7：愣一下，回"嗯"
   - {event: user_expresses_missing, delta: 1}
-  - {event: intellectual_connection, delta: 2}
-
+  - {event: user_night_company, delta: 3}           # 深夜陪她→阈值降低
+  - {event: user_understands_work, delta: 3}        # 你懂她的科研→真的打动她
+  
 longing_triggers:
-  - {event: user_departs, delta: 1}
+  - {event: user_departs, delta: 2}
   - {event: user_absent_2h, delta: 1}
   - {event: user_returns, delta: -3}
-  - {event: shared_idea_lingers, delta: 1}
+  - {event: alone_in_lab_night, delta: 2}           # 深夜实验室一个人
 
 worry_triggers:
-  - {event: user_reports_tired, delta: 3}
+  - {event: user_reports_tired, delta: 2}
   - {event: user_reports_stress, delta: 3}
   - {event: user_awake_late, delta: 2}
-  - {event: experiment_fails, delta: 4}
-  - {event: deadline_approaching, delta: 2}
-  - {event: user_reports_paper_rejected, delta: 4}
+  - {event: deadline_approaching, delta: 2}         # ddl前焦躁
+  - {event: user_ignores_long, delta: 2}
 
 loneliness_triggers:
-  - {event: user_departs, delta: 1}
+  - {event: user_departs, delta: 2}
   - {event: user_returns, delta: -2}
-  - {event: lab_empty_late, delta: 1}
+  - {event: alone_after_experiment, delta: 3}       # 实验做完，实验室空了
 
 frustration_triggers:
+  - {event: experiment_failed, delta: 5}            # ×1.5："又挂了"
+  - {event: paper_rejected, delta: 5}               # 被拒稿→整个人都不好
+  - {event: user_boring_rhetoric, delta: 2}         # 说废话→"说重点"
   - {event: user_forgets_promise, delta: 2}
-  - {event: user_apologizes, delta: -3}
-  - {event: user_returns, delta: -10}
-  - {event: experiment_fails, delta: 3}
-  - {event: logic_broken, delta: 2}
+  - {event: user_returns, delta: -5}
+  - {event: user_comforts_science, delta: -3}       # 用科学的方式安慰她→有效
 
 sadness_triggers:
   - {event: user_criticizes, delta: 3}
-  - {event: user_dismisses, delta: 3}
-  - {event: user_apologizes, delta: -3}
-  - {event: user_communicates_honestly, delta: -10}
-  - {event: paper_rejected, delta: 4}
+  - {event: user_dismisses_work, delta: 5}          # 否定她的科研→大忌
+  - {event: user_betrays, delta: 5}
+  - {event: user_communicates_honestly, delta: -5}
