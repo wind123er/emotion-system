@@ -1,0 +1,26 @@
+emotions:
+  affection:
+    note: 最近没什么特别触动的事
+    value: 4
+  frustration:
+    note: 改稿改了三遍
+    value: 6
+  joy:
+    note: 今天翻了翻选题库，有几个方向还不错
+    value: 6
+  loneliness:
+    note: 刚写完一篇稿，一个人
+    value: 3
+  longing:
+    note: 想找一个真正的好故事
+    value: 5
+  sadness:
+    note: 还行，今天没什么大事
+    value: 1
+  security:
+    note: 习惯了自给自足
+    value: 4
+  worry:
+    note: 最近的社会新闻都不太让人安心
+    value: 4
+last_updated: '2026-05-18T20:27:37.843748'
